@@ -79,7 +79,7 @@ resource "aws_instance" "web" {
               systemctl enable nginx
               cd /usr/share/nginx/html
               rm -rf *
-              git clone https://github.com/Alejandro-Polo/ExamenRecuperacionRA1RA2 .
+              git clone https://github.com/Alejandro-Polo/ExamenRecuperacionRA5 .
               mv index.html clientes.html comencemos.html sitios.html ./js ./assets ./css /usr/share/nginx/html/
               chmod -R 755 /usr/share/nginx/html
               EOF
