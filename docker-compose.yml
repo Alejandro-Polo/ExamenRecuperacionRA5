@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  ldap:
+    image: osixia/openldap:latest
+    container_name: ldap_server
+    environment:
+      LDAP_ORGANISATION: "Academy"
+      LDAP_DOMAIN: "academy.com"
+      LDAP_ADMIN_PASSWORD: "admin123"
+    ports:
+      - "389:389"
+      - "636:636"
+    volumes:
+      - ./ldap:/container/service/slapd/assets/config/bootstrap/ldif/custom
+
+  web:
+    build: ./
+    container_name: web_server
+    environment:
+      LDAP_SERVER: "ldap://ldap_server"
+      LDAP_USER_DN: "cn=admin,dc=academy,dc=com"
+      LDAP_PASSWORD: "admin123"
+      SERVER_NAME: "ALEJANDROPOLOBARRANCO.WORK.GD"
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - ldap

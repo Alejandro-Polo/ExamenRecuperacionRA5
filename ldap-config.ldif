@@ -1,0 +1,11 @@
+dn: ou=users,dc=ssomos,dc=com
+objectClass: organizationalUnit
+ou: users
+
+dn: cn=usuario1,ou=users,dc=ssomos,dc=com
+objectClass: inetOrgPerson
+cn: usuario1
+sn: usuario1
+uid: usuario1
+mail: usuario1@ssomos.com
+userPassword: usuario1

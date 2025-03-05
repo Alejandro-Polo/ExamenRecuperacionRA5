@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Studio Bootstrap5</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Linkar el style.css o index.css el último -->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="./assets/img/bad-dog-studio-logo.png" alt="Perrete"></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" aria-current="page" href="sitios.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sitios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sitios.html#ultimos-proyectos">Últimos Proyectos</a></li>
+                            <li><a class="dropdown-item" href="sitios.html#single-page">Sitio <i>Single Page</i></a>
+                            </li>
+                            <li><a class="dropdown-item" href="sitios.html#multi-page">Sitio <i>Multi Page</i></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clientes.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comencemos.html">Comencemos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactos.html">¿Interesado?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- FIN NAVBAR -->
+
+
+    <main class="pt-5 bg-color">
+        <section id="ultimos-proyectos" class="pb-5">
+            <div class="text-center">
+                <h1>Sitios web 100% responsive</h1>
+                <p class="fs-5">Desarrollo sitios de una sola y de múltiples páginas</p>
+            </div>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/work-slide-1.jpg" class="d-block w-100" alt="Trabajo 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/work-slide-2.jpg" class="d-block w-100" alt="Trabajo 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/work-slide-3.jpg" class="d-block w-100" alt="Trabajo 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/work-slide-4.jpg" class="d-block w-100" alt="Trabajo 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/work-slide-5.png" class="d-block w-100" alt="Trabajo 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/work-slide-6.png" class="d-block w-100" alt="Trabajo 6">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section id="single-page" class="min-vh-100 bg-hero-image bg-img1">
+            <article class="bg-alpha-color min-vh-100 d-flex align-items-center">
+                <div class="container">
+                    <article class="col-12 col-lg-6 offset-lg-6">
+                        <a href="contactos.html" class="btn btn-lg btn-success text-white mb-5"><b>Desde 400<small>€</small></b></a>
+                        <h2>Sitio de una sola pagina</h2>
+                        <small>El precio puede ser más bajo(o más alto) dependiendo de los requisitos de su proyecto</small>
+                        <p class="my-5 fs-5">Lorem ipsum dolor <b>sit amet consectetur adipisicing elit.</b> Aliquid <b>totam officia soluta et deserunt itaque</b>, animi facere ab exercitationem dolorum culpa consequatur quisquam veritatis reprehenderit doloribus ex odit beatae. Esse?</p>
+                        <a href="contactos.html" class="fs-4 fw-bold">Solicite una cotización ahora <i class="bi bi-chevron-right"></i></a>
+                        <div class="row">
+                            <div class="col">
+                                <p><i class="bi bi-check">Sitios Web de una sola página</i></p>
+                                <p><i class="bi bi-check">100% Responsive</i></p>
+                                <p><i class="bi bi-check">Diseño personalizado</i></p>
+                            </div>
+                            <div class="col">
+                                <p><i class="bi bi-check">Corrección de estilo</i></p>
+                                <p><i class="bi bi-check">Edición de imágenes</i></p>
+                                <p><i class="bi bi-check">Soporte</i></p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </section>
+        <section id="single-page" class="min-vh-100 bg-hero-image bg-img2">
+            <article class="bg-alpha-color min-vh-100 d-flex align-items-center">
+                <div class="container">
+                    <article class="col-12 col-lg-6">
+                        <a href="contactos.html" class="btn btn-lg btn-success text-white mb-5"><b>Desde 1000<small>€</small></b></a>
+                        <h2>Sitio Multipagina</h2>
+                        <small>El precio puede ser más bajo(o más alto) dependiendo de los requisitos de su proyecto</small>
+                        <p class="my-5 fs-5">Lorem ipsum dolor <b>sit amet consectetur adipisicing elit.</b> Aliquid <b>totam officia soluta et deserunt itaque</b>, animi facere ab exercitationem dolorum culpa consequatur quisquam veritatis reprehenderit doloribus ex odit beatae. Esse?</p>
+                        <a href="contactos.html" class="fs-4 fw-bold">Solicite una cotización ahora <i class="bi bi-chevron-right"></i></a>
+                        <div class="row">
+                            <div class="col">
+                                <p><i class="bi bi-check">Más de dos página</i></p>
+                                <p><i class="bi bi-check">100% Responsive</i></p>
+                                <p><i class="bi bi-check">Diseño personalizado</i></p>
+                            </div>
+                            <div class="col">
+                                <p><i class="bi bi-check">Corrección de estilo</i></p>
+                                <p><i class="bi bi-check">Edición de imágenes</i></p>
+                                <p><i class="bi bi-check">Soporte</i></p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="bg-dark p-3">
+        <div class="container text-center">
+            <nav class="d-flex justify-content-evenly">
+                <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
+                <a href="https://x.com" target="_blank"><i class="bi bi-x fs-3"></i></a>
+                <a href="https://github.com" target="_blank"><i class="bi bi-github fs-3"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube fs-3"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram fs-3"></i></a>
+                <a href="https://m.me//user.com" target="_blank"><i class="bi bi-messenger fs-3"></i></a>
+                <a href="https://whatsapp.com/send?phone=numero" target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+            </nav>
+
+            <small class="text-white">
+                &copy; 2025 @José Manuel. Hecho con fines lucrativos y clasistas.
+            </small>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>
